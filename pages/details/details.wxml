@@ -1,0 +1,15 @@
+<view id="page" class="{{cssPage}}">
+    <block wx:if="{{showLoading}}">
+        <view class='loading'>loading...</view>
+    </block>
+    <block wx:else>
+        <view class='title'>details page</view>
+
+        <view>id: {{id}}</view>
+
+        <button bindtap='goEditor'>edit</button>
+        <button bindtap='goBack'>back</button>
+    </block>
+
+
+</view>

@@ -1,0 +1,16 @@
+.form-text{
+	display: flex;
+	flex-direction:row;
+	border-bottom: 1px solid #ddd;
+	padding: 10px 12px;
+}
+.form-text > text{
+	width: 4em;
+	color: #00bbbb;
+}
+.form-text input{
+	flex: 1;
+}
+.form-text.first{
+	border-top:1px solid #ddd; 
+}

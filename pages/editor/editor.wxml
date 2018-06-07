@@ -1,0 +1,20 @@
+<view id="page">
+	<view class='title'>editor page</view>
+	<view>view model name: {{name}}</view>
+	<view>id: {{id}}</view>
+	<view class='form-text first'>
+		<text>id: </text>
+		<input placeholder='please enter product id' value="{{product.id}}" ></input>
+	</view>
+	<view class='form-text'>
+		<text>name: </text>
+		<input placeholder='please enter product name' value="{{product.name}}" ></input>
+	</view>
+	<view class='form-text'>
+		<text>image url: </text>
+		<input placeholder='please enter product image url' value="{{product.imageUrl}}" ></input>
+	</view>
+	
+	<button bindtap='goSave'>save and go details</button>
+	<button bindtap='goBack'>back</button>
+</view>

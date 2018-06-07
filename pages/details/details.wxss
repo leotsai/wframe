@@ -1,0 +1,18 @@
+.title{
+	margin-bottom: 25px;
+	text-align: center;
+	font-size: 18pt;
+	font-weight: bold;
+}
+.loading{
+	text-align: center;
+	padding-top: 100px;
+	font-size: 16pt;
+	color: #999;
+}
+#page{
+	display: none;
+}
+#page.shown{
+	display: block;
+}

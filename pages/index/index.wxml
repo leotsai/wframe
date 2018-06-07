@@ -1,0 +1,15 @@
+<view id="page">
+    <view class='loading' wx:if="{{showLoading}}">
+        loading...
+    </view>
+    <view wx:else>
+        <view>total users: {{users.length}}</view>
+		<view>females: {{females}}</view>
+		<view>males: {{males}}</view>
+        <view class="list">
+            <view data-item="{{item}}" wx:for="{{users}}" wx:key="id" bindtap='goDetails'>
+                {{item.id}}: {{item.name}} {{item.gender}} - {{item.birthYear}}
+            </view>
+        </view>
+    </view>
+</view>

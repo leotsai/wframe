@@ -1,0 +1,3 @@
+<view id="page">
+	<button open-type='getUserInfo' bindgetuserinfo='onGotUserInfo'>确认授权</button>
+</view>
