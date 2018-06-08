@@ -2,7 +2,6 @@ var mvcApp = require('../../mvcApp.js');
 var DemoPageBase = require('../DemoPageBase.js');
 var IndexViewModel = require('IndexViewModel.js');
 
-
 function IndexPage() {
 	DemoPageBase.call(this, 'index');
 };
@@ -22,7 +21,7 @@ IndexPage.prototype.ready = function () {
 IndexPage.prototype.goDetails = function (e) {
 	var item = e.target.dataset.item;
 	wx.navigateTo({
-		url: '../details/details?id=' + item.id
+		url: '/pages/details/details?id=' + item.id
 	});
 };
 

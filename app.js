@@ -23,5 +23,4 @@ MvcApplication.prototype.onInitialized = function (configs) {
 	}
 };
 
-//app.js
 App(new MvcApplication());

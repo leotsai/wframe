@@ -3,7 +3,7 @@ var mvcApp = require('../mvcApp.js');
 var api = {
 	login: function (userInfo, code, callback) {
 		var data = mvcApp.serializeToKeyValues(userInfo) + "&code=" + code;
-		mvcApp.ajax.busyPost('/applet/ibuy/login', data, function(result){
+		mvcApp.ajax.busyPost('/demo/api/login', data, function(result){
 			callback(result.value);
 		}, '登陆中...', true);
 	}
